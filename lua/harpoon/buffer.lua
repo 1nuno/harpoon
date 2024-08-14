@@ -53,9 +53,9 @@ function M.setup_autocmds_and_keymaps(bufnr)
         M.run_toggle_command("q")
     end, { buffer = bufnr, silent = true })
 
-    vim.keymap.set("n", "<Esc>", function()
-        M.run_toggle_command("Esc")
-    end, { buffer = bufnr, silent = true })
+    --vim.keymap.set("n", "<Esc>", function()
+    --    M.run_toggle_command("Esc")
+    --end, { buffer = bufnr, silent = true })
 
     vim.keymap.set("n", "<CR>", function()
         M.run_select_command()
